@@ -1,0 +1,377 @@
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: auto;
+  background-color: rgb(30, 30, 30);
+}
+
+.background-container {
+  font-family: "Lora", serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/filmes.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.app-container {
+  font-family: "Lora", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  font-family: "Lora", serif;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.login-button {
+  font-family: "Lora", serif;
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: #1f8fa3;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.input-container {
+  font-family: "Lora", serif;
+}
+
+.error {
+  font-family: "Lora", serif;
+  color: red;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cadastro-container {
+  display: flex;
+}
+
+.cadastro-button {
+  background-color: white;
+  color: #1f8fa3;
+  font-weight: 600;
+}
+
+.cadastro-button:hover {
+  background-color: white;
+  color: #1f8fa3;
+}
+
+.logo {
+  width: 55%;
+}
+
+.logo2 {
+  width: 20%;
+  transition: transform 0.5s;
+}
+
+.logo2:hover {
+  transform: scale(1.15);
+}
+
+.welcome {
+  color: white;
+}
+
+.ou-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 10px;
+}
+
+.divider {
+  width: 200px;
+  height: 1px;
+  background-color: #b8b8b8;
+  margin: 0 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.sair-container {
+  display: flex;
+}
+
+.sair-button {
+  font-weight: 500;
+  margin-top: 50px;
+  width: 10%;
+  background-color: rgb(1, 1, 1);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.sair-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.search-input {
+  font-family: "Lora", serif;
+  width: 925px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  background-color: rgb(175, 25, 25);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  width: 5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.search-icon:hover {
+  background-color: #0c505c;
+}
+
+.search-icon svg {
+  color: white;
+  font-size: 18px;
+}
+
+.search-none {
+  color: white;
+  font-size: 20px;
+  margin-top: 200px;
+}
+
+.none-container {
+  display: flex;
+  margin-left: 350px;
+  width: 900px;
+}
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(15, 15, 15);
+  margin-top: 1990px;
+  border: none;
+  border-radius: 30px;
+}
+
+.small-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(15, 15, 15);
+  margin-top: 600px;
+  border: none;
+  border-radius: 30px;
+}
+
+.filter-container {
+  display: flex;
+}
+
+.filter-container button {
+  margin-right: 10px;
+}
+
+.filter-container button:last-child {
+  margin-right: 0;
+}
+
+.filter-button {
+  background-color: rgb(1, 1, 1);
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.filter-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.filmes-button {
+  background-color: rgb(1, 1, 1);
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 0;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.filmes-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.filmes-button.pressed {
+  background-color: white;
+  color: black;
+}
+
+.series-button {
+  background-color: rgb(1, 1, 1);
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 0;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.series-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.series-button.pressed {
+  background-color: white;
+  color: black;
+}
+
+.todos-button {
+  background-color: rgb(1, 1, 1);
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 0;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.todos-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.todos-button.pressed {
+  background-color: white;
+  color: black;
+}
+
+.filmes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  width: 1000px;
+  padding-bottom: 10px;
+}
+
+.filme-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.filme-card:hover {
+  transform: scale(1.05);
+}
+
+.filme-poster {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.filme-card h3 {
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin: 0;
+}
+
+.space {
+  height: 500px;
+}
+
+h1, h2 {
+  font-family: "Lora", serif;
+  color: #333;
+  font-size: 40px;
+}
+
+label {
+  font-family: "Lora", serif;
+  font-size: 22px;
+}
+
+input {
+  font-family: "Lora", serif;
+  width: 90%;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+img {
+  font-family: "Lora", serif;
+  width: 35%;
+}
+
+button {
+  font-family: "Lora", serif;
+  width: 70%;
+  padding: 10px;
+  background-color: #1f8fa3;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  font-family: "Lora", serif;
+  background-color: #0c505c;
+}
