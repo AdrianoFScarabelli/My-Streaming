@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-# React + Vite
+# My Streaming
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto consiste em aplicação web que possui um streaming de filmes e séries, focada no front-end sem funcionalidades muito complexas de back-end. Onde é possível realizar login, cadastro, filtrar filmes e séries, pesquisa de filmes ou séries pelo nome, etc.
 
-Currently, two official plugins are available:
+## Confira a aplicação web
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# My-Streaming
-Uma aplicação web que consiste em um streaming de filmes e séries, focada no front-end sem funcionalidades complexas de back-end.
->>>>>>> d74b2538b9190764ac89421cbfd87678731c4144
+Crie uma conta, realize o login, e veja a página inicial do My Streming pelo link 
+
+Obs: Essa aplicação web é somente protótipo, não é uma aplicação funcional, ela não salva as contas cadastradas em um banco de dados, nem reproduz nenhum filme ou série.
