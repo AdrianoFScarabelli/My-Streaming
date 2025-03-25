@@ -375,3 +375,104 @@ button:hover {
   font-family: "Lora", serif;
   background-color: #0c505c;
 }
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .app-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .login-button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .filmes-grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .filme-poster {
+    height: 250px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .logo2 {
+    width: 40%;
+  }
+
+  .input-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sair-button {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-container, .small-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .cadastro-container {
+    flex-direction: column;
+  }
+
+  .divider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .login-container {
+    width: 95%;
+  }
+
+  .login-button {
+    font-size: 16px;
+  }
+
+  .filmes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filme-poster {
+    height: 200px;
+  }
+}
