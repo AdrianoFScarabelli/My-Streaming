@@ -43,15 +43,16 @@ const Cadastro = ({ onRegister, onReturn }) => {
             placeholder="Digite sua senha"
           />
           <input
+            className='gap'
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             placeholder="Confirme sua senha"
           />
         </div>
-        {error && <p className="error">{error}</p>}
+        {error && <p className="error2">{error}</p>}
         <button type="submit">Cadastrar</button>
-        <button
+        <button className='button2'
         type='button'
         onClick={onReturn}
         >

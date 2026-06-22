@@ -46,9 +46,9 @@ body {
   font-family: "Lora", serif;
   width: 70%;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 30px;
-  background-color: #1f8fa3;
+  background-color: #128CA0;
   border: none;
   border-radius: 20px;
   font-size: 20px;
@@ -64,8 +64,15 @@ body {
   font-family: "Lora", serif;
   color: red;
   font-size: 15px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.error2 {
+  font-family: "Lora", serif;
+  color: red;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .cadastro-container {
@@ -74,13 +81,13 @@ body {
 
 .cadastro-button {
   background-color: white;
-  color: #1f8fa3;
+  color: #128CA0;
   font-weight: 600;
 }
 
 .cadastro-button:hover {
   background-color: white;
-  color: #1f8fa3;
+  color: #128CA0;
 }
 
 .logo {
@@ -104,7 +111,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 10px 10px;
+  margin: 0 10px;
 }
 
 .divider {
@@ -361,7 +368,7 @@ button {
   font-family: "Lora", serif;
   width: 70%;
   padding: 10px;
-  background-color: #1f8fa3;
+  background-color: #128CA0;
   border: none;
   border-radius: 20px;
   font-size: 20px;
@@ -371,9 +378,32 @@ button {
   margin-bottom: 5px;
 }
 
+.button2 {
+  font-family: "Lora", serif;
+  width: 70%;
+  padding: 10px;
+  background-color: #E00E0E;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
 button:hover {
   font-family: "Lora", serif;
   background-color: #0c505c;
+}
+
+.button2:hover {
+  font-family: "Lora", serif;
+  background-color: #8d0808;
+}
+
+.gap {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
