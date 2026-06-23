@@ -42,12 +42,13 @@ const Login = ({onLogin, onSwitchToRegister, contas}) => {
                 <h2>My Streaming</h2>
                 <div className="input-container">
                     <input
+                    className="email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Digite seu email"
                     />
-                    <input 
+                    <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -71,7 +72,7 @@ const Login = ({onLogin, onSwitchToRegister, contas}) => {
                     type='button'
                     onClick={onSwitchToRegister}
                 >
-                    Crie uma conta
+                    Criar uma conta
                 </button>
             </form>
         </div>

@@ -75,6 +75,10 @@ body {
   margin-bottom: 30px;
 }
 
+input {
+  font-size: 15px;
+}
+
 .cadastro-container {
   display: flex;
 }
@@ -82,7 +86,7 @@ body {
 .cadastro-button {
   background-color: white;
   color: #128CA0;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .cadastro-button:hover {
