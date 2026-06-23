@@ -39,7 +39,7 @@ const Login = ({onLogin, onSwitchToRegister, contas}) => {
             <div className="background-container"></div>
             <form onSubmit={handleLogin}>
                 <img className="logo" src="/logo.png" alt="react" />
-                <h2>My Streaming</h2>
+                <h2 className="title">My Streaming</h2>
                 <div className="input-container">
                     <input
                     className="email"

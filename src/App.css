@@ -35,7 +35,8 @@ body {
 
 .login-container {
   font-family: "Lora", serif;
-  background-color: white;
+  color: white;
+  background-color: rgb(15, 15, 15);
   text-align: center;
   padding: 20px;
   width: 300px;
@@ -75,6 +76,12 @@ body {
   margin-bottom: 30px;
 }
 
+.title {
+  font-family: "Lora", serif;
+  color: white;
+  font-size: 40px;
+}
+
 input {
   font-size: 15px;
 }
@@ -84,13 +91,13 @@ input {
 }
 
 .cadastro-button {
-  background-color: white;
+  background-color: rgb(15, 15, 15);
   color: #128CA0;
   font-weight: 900;
 }
 
 .cadastro-button:hover {
-  background-color: white;
+  background-color: rgb(15, 15, 15);
   color: #128CA0;
 }
 
@@ -343,7 +350,7 @@ p {
   height: 500px;
 }
 
-h1, h2 {
+h1 {
   font-family: "Lora", serif;
   color: #333;
   font-size: 40px;
@@ -446,7 +453,7 @@ button:hover {
     height: 250px;
   }
 
-  h1, h2 {
+  h1 {
     font-size: 24px;
   }
 

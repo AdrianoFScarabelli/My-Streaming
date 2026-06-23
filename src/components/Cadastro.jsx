@@ -28,7 +28,7 @@ const Cadastro = ({ onRegister, onReturn }) => {
     <div className="login-container">
       <div className="background-container"></div>
       <form onSubmit={handleRegister}>
-        <h2>Cadastro</h2>
+        <h2 className="title">Cadastro</h2>
         <div className="input-container">
           <input
             type="email"
