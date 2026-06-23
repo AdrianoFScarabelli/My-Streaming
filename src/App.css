@@ -107,7 +107,7 @@ input {
 
 .logo2 {
   width: 20%;
-  transition: transform 0.5s;
+  transition: transform 0.9s;
 }
 
 .logo2:hover {
