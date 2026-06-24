@@ -105,6 +105,10 @@ input {
   width: 55%;
 }
 
+.home-header {
+  display: none;
+}
+
 .logo2 {
   width: 20%;
   transition: transform 0.9s;
@@ -143,7 +147,7 @@ p {
 
 .sair-button {
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 10px;
   width: 10%;
   background-color: rgb(1, 1, 1);
   transition: background-color 0.5s, color 0.5s;
