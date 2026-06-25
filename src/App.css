@@ -111,6 +111,7 @@ input {
 
 .logo2 {
   width: 20%;
+  margin-top: 100px;
   transition: transform 0.9s;
 }
 

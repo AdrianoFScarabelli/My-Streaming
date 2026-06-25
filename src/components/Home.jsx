@@ -63,7 +63,7 @@ const Home = ({ onLogout }) => {
 
     return (
         <div className={`home-container ${!isTodosPressed || filtroConteudo.length <=8 ? 'small-container' :''}`}>
-            <div className={`home-header ${!isFilmesPressed || !isSeriesPressed ? 'home-header':''}`}>
+            <div className={`${!isTodosPressed? '':'home-header'}`}>
                 <img 
                     className="logo2" 
                     src="/logo.png" 
