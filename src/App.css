@@ -106,12 +106,13 @@ input {
 }
 
 .home-header {
-  display: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .logo2 {
-  width: 20%;
-  margin-top: 100px;
+  width: 10%;
   transition: transform 0.9s;
 }
 
@@ -148,7 +149,7 @@ p {
 
 .sair-button {
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 2px;
   width: 10%;
   background-color: rgb(1, 1, 1);
   transition: background-color 0.5s, color 0.5s;

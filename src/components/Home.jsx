@@ -63,16 +63,7 @@ const Home = ({ onLogout }) => {
 
     return (
         <div className={`home-container ${!isTodosPressed || filtroConteudo.length <=8 ? 'small-container' :''}`}>
-            <div className={`${!isTodosPressed? '':'home-header'}`}>
-                <img 
-                    className="logo2" 
-                    src="/logo.png" 
-                    alt="My Streaming"
-                    onClick={resetPage}
-                    style={{cursor :'pointer'}}
-                />
-            </div>
-            <div className='sair-container'>
+            <div className='home-header'>
                 <button
                     className='sair-button'
                     type='button'
@@ -80,6 +71,13 @@ const Home = ({ onLogout }) => {
                 >
                     Sair
                 </button>
+                <img 
+                    className="logo2" 
+                    src="/logo.png" 
+                    alt="My Streaming"
+                    onClick={resetPage}
+                    style={{cursor :'pointer'}}
+                />
             </div>
             <h1 className="welcome">Bem-vindo ao My Streaming</h1>
             <div className='search-container'>
