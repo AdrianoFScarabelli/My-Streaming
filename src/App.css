@@ -5,7 +5,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   overflow-y: auto;
   background-color: rgb(30, 30, 30);
@@ -28,9 +28,12 @@ body {
 .app-container {
   font-family: "Lora", serif;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .login-container {
@@ -211,7 +214,6 @@ p {
   text-align: center;
   padding: 20px;
   background-color: rgb(15, 15, 15);
-  margin-top: 1990px;
   border: none;
   border-radius: 30px;
 }
@@ -220,7 +222,6 @@ p {
   text-align: center;
   padding: 20px;
   background-color: rgb(15, 15, 15);
-  margin-top: 600px;
   border: none;
   border-radius: 30px;
 }
