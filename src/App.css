@@ -36,6 +36,18 @@ body {
   padding-bottom: 20px;
 }
 
+.app-top {
+  align-items: flex-start;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.app-center {
+  align-items: center;
+  height: 100vh;
+}
+
 .login-container {
   font-family: "Lora", serif;
   color: white;
@@ -115,7 +127,7 @@ input {
 }
 
 .logo2 {
-  width: 10%;
+  width: 5%;
   transition: transform 0.9s;
 }
 

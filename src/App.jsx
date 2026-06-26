@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <div className={`app-container ${isLoggedIn ? 'app-top' : 'app-center'}`}>
       {isLoggedIn ? (
         <Home onLogout={handleLogout} />
       ) : isRegistering ? (
