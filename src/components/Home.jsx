@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { TiDeleteOutline } from "react-icons/ti";
 
 const Home = ({ onLogout }) => {
 
@@ -86,11 +87,8 @@ const Home = ({ onLogout }) => {
                     type="text"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    placeholder="Pesquise o nome de um filme ou série"
+                    placeholder="🔍Pesquise o nome de um filme ou série"
                 />
-                <button className='search-icon'>
-                    <FaSearch />
-                </button>
             </div>
             <button
                 className={`todos-button ${isTodosPressed ? 'pressed' : ''}`}
