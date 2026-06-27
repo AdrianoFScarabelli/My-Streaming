@@ -63,7 +63,8 @@ const Home = ({ onLogout }) => {
     };
 
     return (
-        <div className={`home-container ${!isTodosPressed || filtroConteudo.length <=8 ? 'small-container' :''}`}>
+        <div className={`home-container ${!isTodosPressed || filtroConteudo.length <=8 ? 'small-container' :''}`}>        
+            <div className="background-container"></div>
             <div className='home-header'>
                 <button
                     className='sair-button'
