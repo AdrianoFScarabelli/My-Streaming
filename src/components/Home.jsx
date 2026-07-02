@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
-import { TiDeleteOutline } from "react-icons/ti";
+import { useNavigate } from 'react-router-dom';
 
 const Home = ({ onLogout }) => {
 
+    const navigate = useNavigate();
     const [search, setSearch] = useState('');
     const [mostrarFilmes, setMostrarFilmes] = useState(null);
     const [isTodosPressed, setIsTodosPressed] = useState(true);
@@ -147,21 +147,17 @@ const Home = ({ onLogout }) => {
                 </button>
             </div>
             <div className="filmes-grid">
-                {filtroConteudo.length > 0 ? (
-                    filtroConteudo.map((item) => (
-                        <div key={item.id} className="filme-card">
-                            <img src={item.poster} alt={item.titulo} className="filme-poster" />
-                            <h3>{item.titulo}</h3>
-                        </div>
-                    ))
-                ) : (
-                    <div>
-                        <div className='none-container'>
-                            <p className='search-none'>Nenhum filme ou série encontrado.</p>
-                        </div>
-                        <div className="space"></div>
+                {filtroConteudo.map((item) => (
+                    <div
+                        key={item.id}
+                        className="filme-card"
+                        onClick={() => navigate(`/detalhes/${item.id}`)}
+                        style={{ cursor: 'pointer' }}
+                    >
+                        <img src={item.poster} alt={item.titulo} className="filme-poster" />
+                        <h3>{item.titulo}</h3>
                     </div>
-                )}
+                ))}
             </div>
         </div>
     );
