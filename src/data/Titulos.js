@@ -1,6 +1,6 @@
 const Titulos = [
     { id: 1, tipo: 'filme', titulo: 'Vingadores: Ultimato', poster: 'https://br.web.img3.acsta.net/pictures/19/04/26/17/30/2428965.jpg' },
-    { id: 2, tipo: 'filme', titulo: 'Batman', poster: 'https://br.web.img3.acsta.net/pictures/22/03/02/19/26/3666027.jpg' },
+    { id: 2, tipo: 'filme', titulo: 'Batman', poster: 'https://br.web.img3.acsta.net/pictures/22/03/02/19/26/3666027.jpg', trailer: 'https://www.youtube.com/embed/mqqft2x_Aa4?si=OYRg8RkWu46W6xtM'},
     { id: 3, tipo: 'filme', titulo: 'Star Wars 3', poster: 'https://m.media-amazon.com/images/S/pv-target-images/3a991f1ad651779c8701339593c0a7c6afa18ba8844da38a1740e9fea2ebe873.jpg' },
     { id: 4, tipo: 'filme', titulo: 'O Senhor dos Anéis', poster: 'https://br.web.img3.acsta.net/medias/nmedia/18/92/91/32/20224832.jpg' },
     { id: 5, tipo: 'filme', titulo: 'Matrix', poster: 'https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG' },

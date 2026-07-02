@@ -17,9 +17,16 @@ const Detalhes = () => {
             <img src={item.poster} alt={item.titulo} className="detalhes-poster" />
             <h1>{item.titulo}</h1>
             <p>{item.tipo === 'filme' ? '🎬 Filme' : '📺 Série'}</p>
+            <iframe 
+                width="1260" height="615" 
+                src={item.trailer}
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
         </div>
-
-
     );
 };
 
