@@ -400,6 +400,21 @@ p {
   justify-content: center;
 }
 
+.atores-image {
+  width: 120px;
+  height: 120px;
+  
+  border-radius: 10px;
+}
+
+.atores-card {
+  font-size: 12px;
+  border-radius: 10px;
+  text-align: center;
+  
+  background-color: #333;
+}
+
 .space {
   height: 500px;
 }

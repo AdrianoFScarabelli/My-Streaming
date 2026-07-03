@@ -33,11 +33,11 @@ const Detalhes = () => {
                     </div>
                     <div style={{display: 'flex'}}>
                         <h3 style={{marginRight:'10px'}}>Roteirista</h3>
-                        <h4>NOME</h4>
+                        <h4>NOME DO ROTEIRISTA</h4>
                     </div>
                     <div style={{display: 'flex'}}>
                         <h3 style={{marginRight:'10px'}}>Data de Lançamento</h3>
-                        <h4>NOME</h4>
+                        <h4>DATA DE LANÇAMENTO DO FILME</h4>
                     </div>
                 </div>
                 
@@ -46,7 +46,10 @@ const Detalhes = () => {
             </div>
             <h2>Principais atores</h2>
             <div className="atores-container">
-                <p>CARDS DOS ATORES</p>
+                <div className="atores-card">
+                    <img className="atores-image" src={item.atores} alt="imagem do ator" />
+                    <h3>{item.titulo}</h3>
+                </div>
             </div>
             <p className="space"></p>
             <iframe 
