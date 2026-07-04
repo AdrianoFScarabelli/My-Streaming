@@ -33,7 +33,7 @@ const Detalhes = () => {
                     </div>
                     <div style={{display: 'flex'}}>
                         <h3 style={{marginRight:'10px'}}>Roteirista</h3>
-                        <h4>{item.nmRoteirista[0]}, {item.nmRoteirista[1]}</h4>
+                        <h4>{item.nmRoteirista}</h4>
                     </div>
                     <div style={{display: 'flex'}}>
                         <h3 style={{marginRight:'10px'}}>Data de Lançamento</h3>
