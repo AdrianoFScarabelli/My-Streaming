@@ -42,6 +42,17 @@ const Detalhes = () => {
                 </div>
                 <img src={item.poster} alt={item.titulo} className="detalhes-poster" />
             </div>
+            <h2>Disponível em</h2>
+            <div className="atores-container">
+                {item.ftStreaming.map((foto, index) => (
+                    <img
+                        key={index}
+                        className='streaming-image'
+                        src={foto}
+                        alt="logo streaming"
+                    />
+                ))}
+            </div>
             <h2>Principais atores</h2>
             <div className="atores-container">
                 <div className="atores-card">
