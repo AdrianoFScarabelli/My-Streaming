@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FiLogOut } from 'react-icons/fi';
 import Titulos from '../data/Titulos';
 
 const Home = ({ onLogout }) => {
@@ -13,8 +14,10 @@ const Home = ({ onLogout }) => {
 
     const titulos = Titulos;
 
+    const removerAcentos = (texto) => texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
     const filtroConteudo = titulos.filter((item) =>
-        item.titulo.toLowerCase().includes(search.toLowerCase()) &&
+        removerAcentos(item.titulo.toLowerCase()).includes(removerAcentos(search.toLowerCase())) &&
         (mostrarFilmes === null || item.tipo === (mostrarFilmes ? 'filme' : 'serie'))
     );
 
@@ -43,10 +46,11 @@ const Home = ({ onLogout }) => {
             <div className="background-container"></div>
             <div className='home-header'>
                 <button
-                    className='sair-button'
+                    className="sair-button"
                     type='button'
                     onClick={onLogout}
                 >
+                    <FiLogOut className='sair-icon'/>
                     Sair
                 </button>
                 <img 

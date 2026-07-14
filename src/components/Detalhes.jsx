@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { FiLogOut } from 'react-icons/fi';
 import Titulos from '../data/Titulos';
 
 const titulos = Titulos;
@@ -19,7 +20,10 @@ const Detalhes = () => {
         <div className="detalhes-container">
             <div className="background-container"></div>
             <div className="detalhes-header">
-                <button className='sair-button' onClick={() => navigate(-1)}>Voltar</button>
+                <button className='sair-button' onClick={() => navigate(-1)}>
+                    <FiLogOut className='sair-icon'/>
+                    Voltar
+                </button>
             </div>
             <div className="detalhes-info">
                 <div>

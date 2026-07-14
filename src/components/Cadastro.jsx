@@ -28,6 +28,7 @@ const Cadastro = ({ onRegister, onReturn }) => {
     <div className="login-container">
       <div className="background-container"></div>
       <form onSubmit={handleRegister}>
+        <img className="logo" src="/logo.png" alt="react" />
         <h2 className="title">Cadastro</h2>
         <div className="input-container">
           <input

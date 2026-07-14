@@ -163,11 +163,20 @@ p {
 }
 
 .sair-button {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   margin-top: 2px;
   width: 10%;
-  background-color: rgb(1, 1, 1);
+  color: white;
+  background-color: black;
   transition: background-color 0.5s, color 0.5s;
+}
+
+.sair-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  transition: color 0.5s;
 }
 
 .sair-button:hover {
@@ -187,26 +196,6 @@ p {
 .search-container {
   display: flex;
   align-items: center;
-}
-
-.search-icon {
-  background-color: rgb(175, 25, 25);
-  border: none;
-  border-radius: 5px;
-  padding: 8px;
-  cursor: pointer;
-  width: 5%;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.search-icon:hover {
-  background-color: #0c505c;
-}
-
-.search-icon svg {
-  color: white;
-  font-size: 29px;
 }
 
 .search-none {
@@ -268,7 +257,7 @@ p {
   border-style: solid;
   border-color: white;
   border-width: 2px;
-  border-radius: 0;
+  border-radius: 10px;
   font-weight: 500;
   width: 100%;
   color: white;
@@ -290,7 +279,7 @@ p {
   border-style: solid;
   border-color: white;
   border-width: 2px;
-  border-radius: 0;
+  border-radius: 10px;
   font-weight: 500;
   width: 100%;
   color: white;
@@ -317,6 +306,8 @@ p {
   width: 100%;
   color: white;
   transition: background-color 0.5s, color 0.5s;
+  border-radius: 10px;
+  margin-top: 45px;
 }
 
 .todos-button:hover {
@@ -391,12 +382,15 @@ p {
 .titulo-info {
   display: flex;
   align-items: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: rgb(100, 100, 100);
+  width: 50vw;
 }
 
 .titulo-info h3 {
   margin-right: 10px;
-  background-color: #dadada;
-  color: #000;
+  background-color: #000;
   padding: 10px;
   border-radius: 10px;
 }
@@ -505,105 +499,4 @@ button:hover {
 
 .gap {
   margin-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-
-  body {
-    font-size: 14px;
-  }
-
-  .app-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .login-container {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .login-button {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .search-input {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .filmes-grid {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .filme-poster {
-    height: 250px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .logo {
-    width: 70%;
-  }
-
-  .logo2 {
-    width: 40%;
-  }
-
-  .input-container {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .sair-button {
-    width: 50%;
-    margin-top: 20px;
-  }
-
-  .search-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .filter-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .home-container, .small-container {
-    padding: 15px;
-    margin-top: 20px;
-  }
-
-  .cadastro-container {
-    flex-direction: column;
-  }
-
-  .divider {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  
-  .login-container {
-    width: 95%;
-  }
-
-  .login-button {
-    font-size: 16px;
-  }
-
-  .filmes-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .filme-poster {
-    height: 200px;
-  }
 }
