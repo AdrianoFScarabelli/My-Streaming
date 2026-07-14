@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Titulos from '../data/Titulos';
 
@@ -7,6 +8,10 @@ const Detalhes = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const item = titulos.find((f) => f.id === Number(id));
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     if (!item) return <p style={{ color: 'white' }}>Não encontrado.</p>;
 
@@ -19,53 +24,55 @@ const Detalhes = () => {
             <div className="detalhes-info">
                 <div>
                     <h1>{item.titulo}</h1>
-                    <div style={{display: 'flex'}}>
-                        <h3 style={{marginRight:'10px'}}>Gênero</h3>
+                    <div className="titulo-info">
+                        <h3>Gênero</h3>
                         <h4>{item.tipo === 'filme' ? '🎬 Filme' : '📺 Série'}</h4>
                     </div>
-                    <div style={{display: 'flex'}}>
-                        <h3 style={{marginRight:'10px'}}>Nome original</h3>
+                    <div className="titulo-info">
+                        <h3>Nome original</h3>
                         <h4>{item.nmOriginal}</h4>
                     </div>
-                    <div style={{display: 'flex'}}>
-                        <h3 style={{marginRight:'10px'}}>Diretor</h3>
+                    <div className="titulo-info">
+                        <h3>Diretor</h3>
                         <h4>{item.nmDiretor}</h4>
                     </div>
-                    <div style={{display: 'flex'}}>
-                        <h3 style={{marginRight:'10px'}}>Roteirista</h3>
+                    <div className="titulo-info">
+                        <h3>Roteirista</h3>
                         <h4>{item.nmRoteirista}</h4>
                     </div>
-                    <div style={{display: 'flex'}}>
-                        <h3 style={{marginRight:'10px'}}>Data de Lançamento</h3>
+                    <div className="titulo-info">
+                        <h3>Data de Lançamento</h3>
                         <h4>{item.dtLancamento}</h4>
                     </div>
                 </div>
                 <img src={item.poster} alt={item.titulo} className="detalhes-poster" />
             </div>
-            <h2>Disponível em</h2>
-            <div className="atores-container">
-                {item.ftStreaming.map((foto, index) => (
-                    <img
-                        key={index}
-                        className='streaming-image'
-                        src={foto}
-                        alt="logo streaming"
-                    />
-                ))}
-            </div>
-            <h2>Principais atores</h2>
-            <div className="atores-container">
-                <div className="atores-card">
-                    <img className="atores-image" src={item.ftAtores[0]} alt="imagem do ator" />
-                    <h3>{item.nmAtores[0]}</h3>
+            <div>
+                <h2>Disponível em</h2>
+                <div className="atores-container">
+                    {item.ftStreaming.map((foto, index) => (
+                        <img
+                            key={index}
+                            className='streaming-image'
+                            src={foto}
+                            alt="logo streaming"
+                        />
+                    ))}
                 </div>
-                <div className="atores-card">
-                    <img className="atores-image" src={item.ftAtores[1]} alt="imagem do ator" />
-                    <h3>{item.nmAtores[1]}</h3>
-                </div>
-                <div className="atores-card">
-                    <img className="atores-image" src={item.ftAtores[2]} alt="imagem do ator" />
-                    <h3>{item.nmAtores[2]}</h3>
+                <h2>Principais atores</h2>
+                <div className="atores-container">
+                    <div className="atores-card">
+                        <img className="atores-image" src={item.ftAtores[0]} alt="imagem do ator" />
+                        <h3>{item.nmAtores[0]}</h3>
+                    </div>
+                    <div className="atores-card">
+                        <img className="atores-image" src={item.ftAtores[1]} alt="imagem do ator" />
+                        <h3>{item.nmAtores[1]}</h3>
+                    </div>
+                    <div className="atores-card">
+                        <img className="atores-image" src={item.ftAtores[2]} alt="imagem do ator" />
+                        <h3>{item.nmAtores[2]}</h3>
+                    </div>
                 </div>
             </div>
             <h2>Assista ao trailer</h2>

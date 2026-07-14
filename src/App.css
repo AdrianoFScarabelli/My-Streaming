@@ -367,7 +367,6 @@ p {
 .detalhes-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 40px;
   color: white;
   background-color: rgb(15, 15, 15);
@@ -386,6 +385,20 @@ p {
   align-items: flex-start;
   justify-content: space-between;
   color: white;
+  margin-bottom: 70px;
+}
+
+.titulo-info {
+  display: flex;
+  align-items: center;
+}
+
+.titulo-info h3 {
+  margin-right: 10px;
+  background-color: #dadada;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .detalhes-poster {
@@ -398,7 +411,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .atores-image {
