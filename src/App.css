@@ -507,33 +507,3 @@ button:hover {
   }
   .filme-poster { height: 320px; }
 }
-
-@media (max-width: 1024px) {
-  .home-container,
-  .detalhes-container { width: 95%; padding: 20px; }
-
-  .detalhes-info { flex-direction: column; }
-  .detalhes-poster { width: 200px; }
-  .titulo-info { width: 100%; }
-
-  .filmes-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  h1 { font-size: 24px; }
-
-  .logo2 { width: 20%; }
-  .sair-button { width: 25%; font-size: 14px; }
-
-  .filmes-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .filme-poster { height: 250px; }
-
-  .atores-container { flex-wrap: wrap; }
-  .atores-image { width: 100px; height: 100px; }
-
-  .detalhes-poster { width: 150px; }
-}
